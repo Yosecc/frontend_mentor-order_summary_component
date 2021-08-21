@@ -401,19 +401,19 @@ button,
 .mb-0 {
   margin-bottom: 0px !important; }
 
-.d-flex, body, .box .box_item {
+.d-flex, main, .box .box_item {
   display: flex; }
 
-.justify-content-center, body {
+.justify-content-center, main {
   justify-content: center; }
 
 .justify-content-between {
   justify-content: space-between; }
 
-.align-items-center, body, .box .box_item {
+.align-items-center, main, .box .box_item {
   align-items: center; }
 
-.flex-column, body {
+.flex-column, main {
   flex-direction: column; }
 
 html {
@@ -429,6 +429,14 @@ body {
   @media (min-width: 992px) {
     body {
       background-image: url("../images/pattern-background-desktop.svg"); } }
+
+main {
+  width: 100%;
+  position: relative;
+  height: 95vh; }
+
+footer {
+  height: 5vh; }
 
 h1 {
   font-size: 1.6rem;
