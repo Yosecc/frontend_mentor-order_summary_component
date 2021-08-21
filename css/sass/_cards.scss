@@ -1,0 +1,39 @@
+.card{
+	background:    white;
+	border-radius: 25px;
+	box-shadow:    $shadow;
+	overflow:      hidden;
+	max-width: 380px;
+
+}
+.card_header{
+	height: 160px;
+	&.card_header-bg{
+		background-image: url('../images/illustration-hero.svg');
+		@include bg-default();
+	}
+}
+.card_body{
+	text-align: center;
+	@extend .p-3;
+}
+.card_title{
+	font-weight: var(--body-font-weight-900);
+}
+.card_footer{
+	@extend .card_body;
+	@extend .pt-0;
+}
+
+.box{
+	@extend .p-1;
+	background: $very_pale_blue;
+	border-radius: 10px;
+	.box_item{
+		@extend .d-flex;
+		@extend .align-items-center;
+		&:nth-child(2){
+			@extend .pl-2;
+		}
+	}
+}

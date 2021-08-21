@@ -1,0 +1,40 @@
+@import '_variables';
+@import '_reboot';
+@import '_utilities';
+
+
+html{
+	height: 100%;
+}
+body{
+	background-image: url('../images/pattern-background-mobile.svg');
+	background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--pale_blue);
+	height: 100vh;
+	width: 100vw;
+	@extend .d-flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+    @extend .flex-column;
+	@include media-breakpoint($lg) {
+		background-image: url('../images/pattern-background-desktop.svg');
+	}
+}
+h1{
+	font-size: 1.6rem;
+    font-weight: 900;
+}
+a{
+	font-weight: var(--body-font-weight-900);
+	&.link-mute{
+		color: var(--desaturated_blue); 
+		text-decoration: none;
+		&:hover{
+			color: var(--dark_blue);
+		}
+	}
+}
+
+@import '_cards';
+@import '_buttons';
